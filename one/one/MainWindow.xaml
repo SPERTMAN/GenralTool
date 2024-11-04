@@ -1,0 +1,356 @@
+﻿<Window xmlns:Metro1="clr-namespace:AduSkin.Controls.Metro;assembly=AduSkin"  xmlns:Metro="clr-namespace:AduSkin.Controls.Metro;assembly=AduSkin"  x:Class="one.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:one"
+        xmlns:add="clr-namespace:one.Useradd"
+        xmlns:aduskin="clr-namespace:AduSkin.Controls;assembly=AduSkin"
+        xmlns:handy="https://handyorg.github.io/handycontrol"
+       
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="1200" Icon="/Image/111809342665_01668735180029.ico"  WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Window.Resources>
+        <Style x:Key="defaultRadioStyle" TargetType="RadioButton">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="Foreground" Value="#88949A"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RadioButton">
+                        <Grid>
+                            <Border x:Name="border" Margin="20 0 20 0"/>
+                            <ContentPresenter x:Name="contentPresenter" Grid.Column="1" Focusable="False" 
+                                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" 
+                                              SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter Property="Foreground" Value="#8CEDCB"/>
+                                <Setter Property="BorderBrush" Value="#8CEDCB" TargetName="border"/>
+                                <Setter Property="BorderThickness" Value="0 0 0 4" TargetName="border"/>
+                            </Trigger>
+
+                            <Trigger Property="IsChecked" Value="false">
+                                <Setter Property="BorderThickness" Value="0" TargetName="border"/>
+                            </Trigger>
+
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+        </Style>
+        <Style x:Key="ChangeButtonIsMouseOver" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border" BorderThickness="0" BorderBrush="Black" Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Opacity" Value="20" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!--添加点击事件-->
+      
+
+    </Window.Resources>
+    <Grid>
+        
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+
+
+        <!--标题和工具栏-->
+        <Grid Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="4*"/>
+            </Grid.ColumnDefinitions>
+         
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" ButtonBase.Click="StackPanel_Click">
+
+                <StackPanel >
+                    <Border CornerRadius="30" Width="30" Height="30" Background="#59E6B5"/>
+                    <Border CornerRadius="30" Width="30" Height="30" Background="#4169E1"/>
+
+                </StackPanel>
+                <Border CornerRadius="30" Width="30" Height="30" Background="#FFC100" Margin="-5 0 0 0"/>
+                <Button Content="Project/Studeny" Style="{StaticResource ChangeButtonIsMouseOver}"  BorderThickness="0"  Background="Transparent"  FontWeight="Light" FontSize="18" VerticalAlignment="Center" Foreground="Black"  Margin="10 0 0 0" Height="58" ></Button>
+            </StackPanel>
+
+            <!--<TextBlock Text="Project/Studeny" FontWeight="Light" FontSize="18" VerticalAlignment="Center" Foreground="#4F5050" Margin="10 0 0 0"/>-->
+
+
+            <UniformGrid Columns="6" Grid.Column="1">
+                <RadioButton Style="{StaticResource defaultRadioStyle}" Checked="RadioButton_Checked" >
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Image/环保公益.png" Width="30" Height="30" Stretch="Fill"></Image>
+                        <TextBlock Text="待开发" Margin="10 0 0 0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </RadioButton>
+
+                <RadioButton Style="{StaticResource defaultRadioStyle}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Image/环保公益.png" Width="30" Height="30" Stretch="Fill"></Image>
+                        <TextBlock Text="待开发" Margin="10 0 0 0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </RadioButton>
+
+                <RadioButton Style="{StaticResource defaultRadioStyle}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Image/环保公益.png" Width="30" Height="30" Stretch="Fill"></Image>
+                        <TextBlock Text="待开发" Margin="10 0 0 0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </RadioButton>
+
+                <RadioButton Style="{StaticResource defaultRadioStyle}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Image/环保公益.png" Width="30" Height="30" Stretch="Fill"></Image>
+                        <TextBlock Text="待开发" Margin="10 0 0 0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </RadioButton>
+                <RadioButton Style="{StaticResource defaultRadioStyle}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Image/环保公益.png" Width="30" Height="30" Stretch="Fill"></Image>
+                        <TextBlock Text="待开发" Margin="10 0 0 0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </RadioButton>
+
+            </UniformGrid>
+
+        </Grid>
+        <Grid Grid.Row="1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="260"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+            <Border Background="#F5F5F5" Grid.Row="1" Grid.Column="1"></Border>
+            <Grid Grid.Column="0">
+               
+                <StackPanel Grid.Row="1">
+
+                    
+                    <Button Width="250" Height="60" Margin="15 30 15 0"  FontSize="16" HorizontalContentAlignment="Left"
+                        Background="Transparent" BorderBrush="Transparent" Click="Button_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="Image/首页.png" Width="30" Height="30" Stretch="Fill"></Image>
+                            <TextBlock Text="回到桌面" Foreground="#848484" Margin="15 0 0 0"  VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button Width="250" Height="60" Margin="15 30 15 0"  FontSize="16" HorizontalContentAlignment="Left"
+                        Background="Transparent" BorderBrush="Transparent" Click="Button_Click_1">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="Image/攻略.png" Width="30" Height="30" Stretch="Fill"></Image>
+                            <TextBlock Text="打开笔记" Foreground="#848484" Margin="15 0 0 0"  VerticalAlignment="Center" />
+                        </StackPanel>
+                    </Button>
+
+                    <Button Width="250" Height="60" Margin="15 30 15 0"  FontSize="16" HorizontalContentAlignment="Left"
+                          Background="Transparent" BorderBrush="Transparent" Click="Button_Click_2">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="Image/政策解读.png" Width="30" Height="30" Stretch="Fill"></Image>
+                            <TextBlock Text="后续开发日志" Foreground="#848484" Margin="15 0 0 0"  VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button Width="250" Height="60" Margin="15 30 15 0"  FontSize="16" HorizontalContentAlignment="Left"
+                          Background="Transparent" BorderBrush="Transparent" Click="Button_Click_3">
+                        <StackPanel Orientation="Horizontal" >
+                            <Image Source="Image/签证.png" Width="30" Height="30" Stretch="Fill"></Image>
+                            <TextBlock Text="继续开发" Foreground="#848484" Margin="15 0 0 0"  VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button Width="250" Height="60" Margin="15 30 15 0"  FontSize="16" HorizontalContentAlignment="Left"
+                          Background="Transparent" BorderBrush="Transparent" Click="Button_Click_4" >
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                            <Image Source="Image/关闭.png" Width="30" Height="30" Stretch="Fill"></Image>
+                            <TextBlock Text="关机下班" Foreground="#848484" Margin="15 0 0 0"  VerticalAlignment="Center"/>
+                        </StackPanel>
+                        
+                    </Button>
+                   
+                      <!--  <StackPanel Orientation="Horizontal" Margin="0 0 0 0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                        </Grid>
+                        <Image Height="50" Source="/Image/加音量.png"></Image>
+                        <Slider Grid.Column="1" Width="200"></Slider>
+                    </StackPanel>-->
+
+                </StackPanel>
+
+            </Grid>
+
+            <StackPanel Grid.Row="1" Grid.Column="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition  Height="auto"/>
+                        <RowDefinition  Height="auto"/>
+                        <RowDefinition  Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Margin="20 0 0 0" Text="Message Data" FontSize="25"  FontWeight="Bold" Foreground="DarkSlateGray" VerticalAlignment="Center"/>
+
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                        <Border Width="80" Height="25" CornerRadius="10" BorderThickness="1" Margin="0 0 15 0" BorderBrush="#A4ADB2">
+                            <TextBlock Text="DAY" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        </Border>
+
+                        <Border Width="80" Height="25" CornerRadius="10" BorderThickness="1" Margin="0 0 15 0" BorderBrush="#A4ADB2">
+                            <TextBlock Text="MONTH" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        </Border>
+
+                        <Border Width="80" Height="25" CornerRadius="10" BorderThickness="1" Margin="0 0 15 0" BorderBrush="#A4ADB2">
+                            <TextBlock Text="YEAR" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        </Border>
+                    </StackPanel>
+
+                    <UniformGrid Grid.Row="1" Columns="3">
+                        <!-- 定义网格 -->
+                        <!-- 利用背景画图-->
+                        <Border Margin="15" CornerRadius="5">
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,1" EndPoint="1,1">
+                                    <GradientStop Offset="0" Color="#00CED1"/>
+                                    <GradientStop Offset="1" Color="#59E6B5"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
+                            <Grid>
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="2*"/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition Height="2*"/>
+                                </Grid.RowDefinitions>
+                                <Border Margin="0 20 0 0 " BorderThickness="1" Height="1" BorderBrush="#EBEBEB" VerticalAlignment="Center" Grid.RowSpan="2"/>
+                                <!--
+                                <Border Grid.Row="1" BorderThickness="0 0 0 1" Margin="20 0 20 0" VerticalAlignment="Bottom" BorderBrush="#808A87"/>
+                                <Border Grid.Row="2" BorderThickness="0 0 0 1" Margin="20 0 20 -3" VerticalAlignment="Bottom" BorderBrush="#808A87"/>
+                                <Border Grid.Row="3" BorderThickness="0 0 0 1" Margin="20 0 20 5" VerticalAlignment="Bottom" BorderBrush="#808A87"/>-->
+                                <TextBlock Text="每日必做" FontFamily="Image/#iconfont" FontSize="20" Foreground="White" VerticalAlignment="Bottom" Margin="20 15 0 20" />
+                                <StackPanel Grid.Row="1" Orientation="Horizontal"  Margin="0 10 0 0" >
+                                    <Image Source="Image/健康生活卡 (1).png" Width="30" Height="30" Stretch="Fill" Margin="20 0 0 0"></Image>
+                                    <TextBlock Text="microsoft to do" Grid.Row="1" VerticalAlignment="Center" FontSize="15" Margin="10 0 0 0" Foreground="White"  MouseDown="TextBlock_MouseDown"/>
+
+                                </StackPanel>
+
+                                <TextBlock Text="复习"  VerticalAlignment="Center" Grid.Row="2" FontSize="15" Margin="20 10 0 0" Foreground="White"/>
+                                <TextBlock Text="看笔记" Grid.Row="3" FontSize="15" Foreground="White" Margin="20 10 0 10" VerticalAlignment="Center"/>
+
+
+                                <Canvas ClipToBounds="True" Grid.RowSpan="4">
+                                    <Border Canvas.Right="-40" Canvas.Top="10" Grid.RowSpan="4" Width="110" Height="110"  CornerRadius="100" Background="#ffffff" Opacity="0.2" VerticalAlignment="Top"  HorizontalAlignment="Right"/>
+                                    <Border Canvas.Right="-10" Canvas.Top="100" Grid.RowSpan="4" Width="110" Height="110" CornerRadius="100" Background="#ffffff" Opacity="0.2" VerticalAlignment="Bottom"  HorizontalAlignment="Right"/>
+                                </Canvas>
+                            </Grid>
+                        </Border>
+
+                        <Border Margin="15" CornerRadius="5">
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,1" EndPoint="1,1">
+                                    <GradientStop Offset="0" Color="#FFD700"/>
+                                    <GradientStop Offset="1" Color="#FFC100"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="2*"/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition Height="2*"/>
+                                </Grid.RowDefinitions>
+                                <Border Margin="0 20 0 0 " BorderThickness="1" Height="1" BorderBrush="#EBEBEB" VerticalAlignment="Center" Grid.RowSpan="2"/>
+                                <TextBlock Text="还没想好" FontFamily="Fonts/#iconfont" FontSize="20" Foreground="White" VerticalAlignment="Bottom" Margin="20 15 0 20" />
+                                <TextBlock Text="待开发" Grid.Row="1" VerticalAlignment="Center" FontSize="15" Margin="20 10 0 0" Foreground="White"/>
+                                <TextBlock Text="待开发"  VerticalAlignment="Center" Grid.Row="2" FontSize="15" Margin="20 10 0 0" Foreground="White"/>
+                                <TextBlock Text="待开发" Grid.Row="3" FontSize="15" Foreground="White" Margin="20 10 0 0" VerticalAlignment="Center"/>
+
+
+                                <Canvas ClipToBounds="True" Grid.RowSpan="4">
+                                    <Border Canvas.Right="-40" Canvas.Top="10" Grid.RowSpan="4" Width="110" Height="110"  CornerRadius="100" Background="#ffffff" Opacity="0.2" VerticalAlignment="Top"  HorizontalAlignment="Right"/>
+                                    <Border Canvas.Right="-10" Canvas.Top="100" Grid.RowSpan="4" Width="110" Height="110" CornerRadius="100" Background="#ffffff" Opacity="0.2" VerticalAlignment="Bottom"  HorizontalAlignment="Right"/>
+                                </Canvas>
+
+                            </Grid>
+                        </Border>
+
+                        <Border Margin="15" CornerRadius="5">
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,1" EndPoint="1,1">
+                                    <GradientStop Offset="0" Color="#4169E1"/>
+                                    <GradientStop Offset="1" Color="#6A5ACD"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="2*"/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition Height="2*"/>
+                                </Grid.RowDefinitions>
+                                <Border Margin="0 20 0 0 " BorderThickness="1" Height="1" BorderBrush="#EBEBEB" VerticalAlignment="Center" Grid.RowSpan="2"/>
+                                <TextBlock Text="还没想好" FontFamily="Fonts/#iconfont" FontSize="20" Foreground="White" VerticalAlignment="Bottom" Margin="20 15 0 20" />
+                                <TextBlock Text="待开发" Grid.Row="1" VerticalAlignment="Center" FontSize="15" Margin="20 10 0 0" Foreground="White"/>
+                                <TextBlock Text="待开发"  VerticalAlignment="Center" Grid.Row="2" FontSize="15" Margin="20 10 0 0" Foreground="White"/>
+                                <TextBlock Text="待开发" Grid.Row="3" FontSize="15" Foreground="White" Margin="20 10 0 0" VerticalAlignment="Center"/>
+
+
+                                <Canvas ClipToBounds="True" Grid.RowSpan="4">
+                                    <Border Canvas.Right="-40" Canvas.Top="10" Grid.RowSpan="4" Width="110" Height="110"  CornerRadius="100" Background="#ffffff" Opacity="0.2" VerticalAlignment="Top"  HorizontalAlignment="Right"/>
+                                    <Border Canvas.Right="-10" Canvas.Top="100" Grid.RowSpan="4" Width="110" Height="110" CornerRadius="100" Background="#ffffff" Opacity="0.2" VerticalAlignment="Bottom"  HorizontalAlignment="Right"/>
+                                </Canvas>
+
+                            </Grid>
+                        </Border>
+                    </UniformGrid>
+                    <StackPanel Grid.Row="2" Height="150">
+                        <TextBlock Grid.Row="1" Text="Commonly used and quick" FontWeight="Bold" Foreground="DarkSlateGray" Margin="15,30,0,0" FontSize="25"/>
+                        <UniformGrid Columns="8" Grid.Row="2" Margin="0,10,0,30">
+                            <add:ImageButtons ImageSource="/Image/272c408fa8eb1a371dadd7f1536d48bb.jpeg" ButtonText="Images" ButtonBase.Click="ImageButtons_Click"/>
+                            <add:ImageButtons ImageSource="/Image/4c058a0f317b20e0c53d3f6e436e6847.jpeg" ButtonText="Videos" ButtonBase.Click="ImageButtons_Click_1"/>
+                            <add:ImageButtons ImageSource="/Assets/music.png" ButtonText="Music"/>
+                            <add:ImageButtons ImageSource="/Assets/apps.png" ButtonText="Apps"/>
+                            <add:ImageButtons ImageSource="/Assets/zip.png" ButtonText="Zip Files"/>
+                            <add:ImageButtons ImageSource="/Assets/document.png" ButtonText="Documents"/>
+                            <add:ImageButtons ImageSource="/Assets/downloadsfolder.png" ButtonText="Downloads"/>
+                            <add:ImageButtons ImageSource="/Assets/plus.png" ButtonText="Add"/>
+                        </UniformGrid>
+                    </StackPanel>
+                    <StackPanel Grid.Row="3" Height="auto">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto" ></ColumnDefinition>
+                                <ColumnDefinition Width="80"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <add:FlieList x:Name="filelist"  Height="300" Grid.Column="0" Margin="20,27,0,30"></add:FlieList>
+                        </Grid>
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

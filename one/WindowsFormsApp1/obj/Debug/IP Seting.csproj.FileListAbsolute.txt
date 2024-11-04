@@ -1,0 +1,25 @@
+D:\d\DestTop\自制\one\one\WindowsFormsApp1\bin\Debug\IP Seting.exe
+D:\d\DestTop\自制\one\one\WindowsFormsApp1\bin\Debug\IP Seting.exe.config
+D:\d\DestTop\自制\one\one\WindowsFormsApp1\bin\Debug\System.CodeDom.dll
+D:\d\DestTop\自制\one\one\WindowsFormsApp1\bin\Debug\System.CodeDom.xml
+D:\d\DestTop\自制\one\one\WindowsFormsApp1\obj\Debug\IP Seting.csproj.AssemblyReference.cache
+D:\d\DestTop\自制\one\one\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+D:\d\DestTop\自制\one\one\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\d\DestTop\自制\one\one\WindowsFormsApp1\obj\Debug\IP Seting.csproj.GenerateResource.cache
+D:\d\DestTop\自制\one\one\WindowsFormsApp1\obj\Debug\IP Seting.csproj.CoreCompileInputs.cache
+D:\d\DestTop\自制\one\one\WindowsFormsApp1\obj\Debug\IP Seting.csproj.Up2Date
+D:\d\DestTop\自制\one\one\WindowsFormsApp1\obj\Debug\IP Seting.exe
+D:\d\DestTop\自制\one\one\WindowsFormsApp1\obj\Debug\IP Seting.pdb
+F:\lj\one\d\DestTop\自制\one\one\WindowsFormsApp1\bin\Debug\IP Seting.exe.config
+F:\lj\one\d\DestTop\自制\one\one\WindowsFormsApp1\bin\Debug\IP Seting.exe
+F:\lj\one\d\DestTop\自制\one\one\WindowsFormsApp1\bin\Debug\IP Seting.pdb
+F:\lj\one\d\DestTop\自制\one\one\WindowsFormsApp1\bin\Debug\System.CodeDom.dll
+F:\lj\one\d\DestTop\自制\one\one\WindowsFormsApp1\bin\Debug\System.CodeDom.xml
+F:\lj\one\d\DestTop\自制\one\one\WindowsFormsApp1\obj\Debug\IP Seting.csproj.AssemblyReference.cache
+F:\lj\one\d\DestTop\自制\one\one\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+F:\lj\one\d\DestTop\自制\one\one\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+F:\lj\one\d\DestTop\自制\one\one\WindowsFormsApp1\obj\Debug\IP Seting.csproj.GenerateResource.cache
+F:\lj\one\d\DestTop\自制\one\one\WindowsFormsApp1\obj\Debug\IP Seting.csproj.CoreCompileInputs.cache
+F:\lj\one\d\DestTop\自制\one\one\WindowsFormsApp1\obj\Debug\IP Seting.csproj.Up2Date
+F:\lj\one\d\DestTop\自制\one\one\WindowsFormsApp1\obj\Debug\IP Seting.exe
+F:\lj\one\d\DestTop\自制\one\one\WindowsFormsApp1\obj\Debug\IP Seting.pdb

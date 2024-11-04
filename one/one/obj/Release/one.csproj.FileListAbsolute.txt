@@ -1,0 +1,15 @@
+C:\Users\Administrator\Desktop\自制\one\one\one\obj\Release\one.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\自制\one\one\one\obj\Release\one.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator\Desktop\自制\one\one\one\obj\Release\Custom Controls\ActivityCard.g.cs
+C:\Users\Administrator\Desktop\自制\one\one\one\obj\Release\Custom Controls\CardButtons.g.cs
+C:\Users\Administrator\Desktop\自制\one\one\one\obj\Release\Custom Controls\CircularProgressBar.g.cs
+C:\Users\Administrator\Desktop\自制\one\one\one\obj\Release\Custom Controls\FileListControl.g.cs
+C:\Users\Administrator\Desktop\自制\one\one\one\obj\Release\Custom Controls\ImageButtons.g.cs
+C:\Users\Administrator\Desktop\自制\one\one\one\obj\Release\Custom Controls\mediumSizeButtons.g.cs
+C:\Users\Administrator\Desktop\自制\one\one\one\obj\Release\Custom Controls\proCard.g.cs
+C:\Users\Administrator\Desktop\自制\one\one\one\obj\Release\ErrorWindow.g.cs
+C:\Users\Administrator\Desktop\自制\one\one\one\obj\Release\MainWindow.g.cs
+C:\Users\Administrator\Desktop\自制\one\one\one\obj\Release\App.g.cs
+C:\Users\Administrator\Desktop\自制\one\one\one\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\Administrator\Desktop\自制\one\one\one\obj\Release\one_MarkupCompile.cache
+C:\Users\Administrator\Desktop\自制\one\one\one\obj\Release\one_MarkupCompile.lref
